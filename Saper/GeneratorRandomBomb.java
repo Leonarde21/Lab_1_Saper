@@ -10,10 +10,8 @@ class GeneratorRandomBomb {
 
         float coefficient = 0.2F;
 
-        int size = 20;//random.nextInt(3, 10000);
-        System.out.println(size);
+        int size = random.nextInt(3, 10000);
         int quantity = (int) (size * size * coefficient);
-        System.out.println(quantity);
 
         String[][] field = CreateField(size, quantity); //Создаем поле
         AssemblyBomb(field, size); //Подсчитываем бомбы вокруг клетки
